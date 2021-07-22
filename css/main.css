@@ -543,6 +543,14 @@ footer {
 .text-footer a:hover {
     text-decoration:underline;
 }
+
+
+@media (max-width: 1170px) {
+    .about-company {
+        margin-left: 70px;
+    }
+}
+
 @media (max-width: 830px) {
 section .content-banner h1 {
         font-size: 	2rem;
