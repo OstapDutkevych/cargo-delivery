@@ -1,3 +1,619 @@
-body {
-    background-color: red;
+* { margin:0; padding:0; }
+
+
+
+ .top-line {
+     background-color: #C8A35F;
+    display: flex;
+    list-style-type: none;
+     flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    padding: 13px 0 13px 0;
+
+}
+
+.top-line >li{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.top-line  .list_language {
+    color: red;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+
+}
+.top-line  .list_language li {
+
+padding: 0 5px 0 5px;
+}
+.top-line  .list_language a {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.top-line  .list_language a:hover {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.bottom-line {
+    background-color:  #2F343A;
+}
+.wrapper-bottom-line {
+    display: flex;
+    justify-content: space-around;
+    padding: 18px;
+    flex-wrap: wrap;
+}
+.logo-and-location{
+    display: flex;
+    justify-content: space-between;
+    width: max-content;
+}
+.bottom-line nav  {
+    text-align:center;
+}
+.bottom-line nav a{
+    font-family: Roboto, 'sans-serif';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 3.7;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0 5px 0 5px;
+}
+.bottom-line nav a:hover{
+    font-family: Roboto, 'sans-serif';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 3.7;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0 5px 0 5px;
+    opacity: 0.5;
+}
+.location {
+    display: flex;
+    justify-content: center;
+    padding-left: 13px;
+    position: relative;
+}
+.logo{
+    padding-right: 13px;
+}
+.location img{
+    height: 43px;
+    width: 24px;
+}
+
+.location span {
+    font-family: Roboto, 'sans-serif';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    /*letter-spacing: 0.05em;*/
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    align-items: center;
+    display: inline-flex;
+    white-space: nowrap;
+}
+.location:before{
+    content: '';
+    width: 1px;
+    height: 50px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 0px;
+}
+
+
+section.banner-section {
+    background-image: url('../background.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    max-height: 620px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .content-banner {
+    border: 1px solid #C8A35F ;
+    width: 40%;
+    margin: 0 auto;
+    padding: 60px 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .content-banner h1 {
+    font-family: Roboto, 'sans-serif';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 	2.5rem; /*40px*/
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 0 40px 0;
+}
+section .content-banner p {
+    font-family: Roboto, 'sans-serif';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25rem; /*20px*/
+    color: #FFFFFF;
+    text-align: center;
+}
+.services {
+    display: flex;
+}
+.firstBlock {
+    display: flex;
+    justify-content: flex-end;
+    /*height: 300px;*/
+    width: 90%;
+    background-color:#393F47;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.middleBlock {
+    /*max-width: 150vh;*/
+    /*height: 300px;*/
+    width: 50%;
+    background-color: #2F343A;
+}
+.lastBlock {
+    /*max-width: 300vh;*/
+    /*height: 300px;*/
+    width: 80%;
+    background-color:#393F47;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 0;
+    align-items: center;
+}
+.content-first-block {
+    position: relative;
+    left: 25px;
+}
+.content-first-block hr {
+    border: 2px solid #C8A35F;
+    border-radius: 10px;
+    width: 90px;
+    display: inline-block;
+}
+
+.content-first-block h2 {
+    font-family: Roboto, 'sans-serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 22px 0;
+    /*text-align: center;*/
+}
+.content-first-block span {
+    font-family: Roboto, 'sans-serif';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem; /*20px*/
+    color: #FFFFFF;
+    /*text-align: center;*/
+}
+
+.content-first-block button {
+    display: block;
+    font-family: Roboto, 'sans-serif';
+    background-color: #C8A35F;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 35px;
+}
+.content-first-block button:hover {
+    display: block;
+    font-family: Roboto, 'sans-serif';
+    background-color: #f3ce70;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.arrow-previous,.arrow-next {
+    border:1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: content-box;
+
+}
+.arrow-previous:hover,.arrow-next:hover {
+    cursor: pointer;
+    border-bottom: 1px solid #C8A35F;
+}
+
+.lastBlock span {
+    color: #C8A35F;
+    font-family: Roboto, 'sans-serif';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 10px ;
+}
+.arrow-previous img {
+    transform:rotate(-180deg);
+}
+
+.truck-car {
+    position: absolute;
+    left: 61%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+
+.container{
+    /*width: max-content;*/
+    max-width: 1105px;
+    width: 100%;
+    /*height: 300px;*/
+    margin: 0 auto;
+}
+.about-company-and-services {
+    background-color: #2F343A;
+}
+.elem-service {
+        color: white;
+        font-size: 20px;
+        border: 1px solid #2F343A;
+        width: 270px;
+        height: 180px;
+    background-color: #393F47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*background-image: url("../image/airplan-light.png");*/
+    /*background-repeat:no-repeat;*/
+    /*background-position: center;*/
+
+}
+.bg_icon {
+    width: 30px;
+    height: 30px;
+    background-image: url("../image/airplan-light.png");
+    background-repeat:no-repeat;
+    background-position: center;
+    z-index: 11;
+
+}
+
+.about-company-and-services hr {
+    border: 2px solid #C8A35F;
+    border-radius: 10px;
+    width: 90px;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+.elem-service span {
+    font-family: Roboto, 'sans-serif';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.circle {
+    background-color: #393F47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.elem-service:hover .bg_icon {
+    width: 30px;
+    height: 30px;
+    background-image: url("../image/airplane-dark.png");
+}
+
+.elem-service:hover .circle {
+    background-color: white;
+}
+
+.elem-service:hover{
+    background-color: #f3ce70;
+    cursor: pointer;
+}
+
+.about-company-and-services .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 70px;
+
+}
+.about-company-and-services .choose-service {
+    display: flex;
+    justify-content: center;
+}
+.about-company-and-services .choose-service2 {
+    display: flex;
+    justify-content: center;
+}
+
+.about-company-and-services .services h2{
+    color: #FFFFFF;
+    font-family: Roboto, 'sans-serif';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    width: 16%;
+    text-transform: uppercase;
+
+}
+
+.about-company {
+    z-index: 50;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 179px 0;
+    /*background: linear-gradient(90deg, #FFC0CB 50%, #00FFFF 50%);*/
+}
+.bg_service{
+    position: absolute;
+    z-index: 49;
+    background-color: #393F47;
+    width: 410px;
+    height: 480px;
+    left: 310px;
+    top: 96px;
+}
+.info-company h2{
+    color: #FFFFFF;
+    font-family: Roboto, 'sans-serif';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.info-company p{
+    color: #FFFFFF;
+    font-family: Roboto, 'sans-serif';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+.summary-company h1 {
+    font-family: Roboto, 'sans-serif';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: 0.05em;
+    text-align: center;
+
+}
+
+.summary-company span {
+    font-family: Roboto, 'sans-serif';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.countOffice, .countTruck, .countEmployee {
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.block{
+    width: 200px;
+    height: 160px;
+}
+.info-company {
+    z-index: 51;
+    display: flex;
+    flex-direction: column;
+    /*max-width: max-content;*/
+    width: 50%;
+}
+.summary-company {
+    z-index: 51;
+    display: flex;
+    width: 66%;
+    flex-wrap: wrap;
+}
+footer {
+    background-color: #C8A35F;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+.contact-footer p{
+    font-family: Roboto, 'sans-serif';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    white-space: nowrap;
+    color: white;
+}
+.contact-footer span{
+    font-family: Roboto, 'sans-serif';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    align-items: center;
+}
+.number-footer span{
+    display: block;
+    font-family: Roboto, 'sans-serif';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+
+}
+.text-footer a {
+    font-family: Roboto, 'sans-serif';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+.text-footer a:hover {
+    text-decoration:underline;
+}
+@media (max-width: 830px) {
+section .content-banner h1 {
+        font-size: 	2rem;
+    }
+    .truck-car img{
+        width: 350px;
+        height: 220px;
+    }
+    .truck-car {
+        position: absolute;
+        left: 40%;
+        -webkit-transform: translateX(-50%);
+        transform: translateY(20%);
+    }
+    .about-company {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .choose-service {
+        flex-wrap: wrap;
+    }
+    .choose-service2 {
+        flex-wrap: wrap;
+    }
+    .bg_service{
+        position: absolute;
+        z-index: 49;
+        background-color: #393F47;
+        width: 410px;
+        height: 480px;
+        left: 157px;
+        top: 110px;
+    }
+}
+@media (max-width: 680px) {
+    section  .content-banner h1 {
+        font-size: 1.3rem;
+    }
+    .content-first-block h2 {
+        font-size: 1.4rem;
+    }
+    .truck-car {
+        position: absolute;
+        left: 34%;
+        -webkit-transform: translateX(-50%);
+        transform: translateY(33%);
+    }
+    .truck-car img{
+        width: 300px;
+        height: 180px;
+    }
+
+    .bg_service{
+        position: absolute;
+        z-index: 49;
+        background-color: #393F47;
+        width: 410px;
+        height: 480px;
+        left: 157px;
+        top: 110px;
+    }
+}
+@media (max-width: 623px) {
+    .bg_service{
+        position: absolute;
+        z-index: 49;
+        background-color: #393F47;
+        width: 410px;
+        height: 480px;
+        left: 68px;
+        top: 110px;
+    }
 }
